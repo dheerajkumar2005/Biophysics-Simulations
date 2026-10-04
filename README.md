@@ -18,25 +18,7 @@ The curriculum spans lattice spin statistics, polymer conformation thermodynamic
 
 ---
 
-## 🏗️ Simulation Modules
 
-```mermaid
-flowchart TD
-    subgraph M1["Module 1: Ising Model (MCMC)"]
-        Lattice["Spin Lattice sᵢ ∈ {-1, +1}"] --> Metro["Metropolis Algorithm<br/>ΔE = -J ∑ sᵢ sⱼ - h ∑ sᵢ"]
-        Metro --> Equil["Equilibrium State<br/>Magnetization M(h) & Energy vs. Steps"]
-    end
-
-    subgraph M2["Module 2: Polymer Physics"]
-        Monomers["Chain Monomers (N steps)"] --> Walk["Random Walk vs. Self-Avoiding Walk (SAW)"]
-        Walk --> Flory["Radius of Gyration R_g & Flory Exponent Scaling ν"]
-    end
-
-    subgraph M3["Module 3: Brownian & Langevin Dynamics"]
-        SDE["Langevin SDE<br/>m d²x/dt² = -γ dx/dt + ξ(t)"] --> Euler["Euler-Maruyama Integration"]
-        Euler --> MSD["Mean Squared Displacement (MSD)<br/>Ballistic (t²) ➔ Diffusive (2Dt) Crossover"]
-    end
-```
 
 ---
 
